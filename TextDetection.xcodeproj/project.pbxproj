@@ -26,6 +26,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F8C1F77DA539CEF9DC600D6 /* Pods-TextDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetection/Pods-TextDetection.debug.xcconfig"; sourceTree = "<group>"; };
+		4DB67F539593E830A6B1E8AA /* Pods-TextDetectionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetectionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetectionUITests/Pods-TextDetectionUITests.release.xcconfig"; sourceTree = "<group>"; };
+		608B5F8C7EB4AD39686D5E22 /* Pods-TextDetectionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetectionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetectionUITests/Pods-TextDetectionUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		D0AAD1581F7DAD4C005A0B78 /* TextDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AAD15B1F7DAD4C005A0B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0AAD15D1F7DAD4C005A0B78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -36,6 +39,7 @@
 		D0AAD16C1F7DAD4C005A0B78 /* TextDetectionUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TextDetectionUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AAD1701F7DAD4C005A0B78 /* TextDetectionUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextDetectionUITests.swift; sourceTree = "<group>"; };
 		D0AAD1721F7DAD4C005A0B78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D685D2EDF7CCE9BA541C6EAE /* Pods-TextDetection.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetection.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetection/Pods-TextDetection.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,12 +60,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4F1CE38DE4FB14C425B2F380 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1F8C1F77DA539CEF9DC600D6 /* Pods-TextDetection.debug.xcconfig */,
+				D685D2EDF7CCE9BA541C6EAE /* Pods-TextDetection.release.xcconfig */,
+				608B5F8C7EB4AD39686D5E22 /* Pods-TextDetectionUITests.debug.xcconfig */,
+				4DB67F539593E830A6B1E8AA /* Pods-TextDetectionUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D0AAD14F1F7DAD4C005A0B78 = {
 			isa = PBXGroup;
 			children = (
 				D0AAD15A1F7DAD4C005A0B78 /* TextDetection */,
 				D0AAD16F1F7DAD4C005A0B78 /* TextDetectionUITests */,
 				D0AAD1591F7DAD4C005A0B78 /* Products */,
+				4F1CE38DE4FB14C425B2F380 /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,9 +119,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0AAD1751F7DAD4C005A0B78 /* Build configuration list for PBXNativeTarget "TextDetection" */;
 			buildPhases = (
+				163F51D065A3EEDAC07BDC59 /* [CP] Check Pods Manifest.lock */,
 				D0AAD1541F7DAD4C005A0B78 /* Sources */,
 				D0AAD1551F7DAD4C005A0B78 /* Frameworks */,
 				D0AAD1561F7DAD4C005A0B78 /* Resources */,
+				FAC34699B6807628043A1F5C /* [CP] Embed Pods Frameworks */,
+				C68CC352ABBB736EAB9A066B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -120,9 +139,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D0AAD1781F7DAD4C005A0B78 /* Build configuration list for PBXNativeTarget "TextDetectionUITests" */;
 			buildPhases = (
+				8B28D432FDDE61A928D96545 /* [CP] Check Pods Manifest.lock */,
 				D0AAD1681F7DAD4C005A0B78 /* Sources */,
 				D0AAD1691F7DAD4C005A0B78 /* Frameworks */,
 				D0AAD16A1F7DAD4C005A0B78 /* Resources */,
+				57FE0C8B44DA0D13F302917C /* [CP] Embed Pods Frameworks */,
+				563A6DB014299E695B3B791B /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -193,6 +215,108 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		163F51D065A3EEDAC07BDC59 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextDetection-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		563A6DB014299E695B3B791B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextDetectionUITests/Pods-TextDetectionUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		57FE0C8B44DA0D13F302917C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextDetectionUITests/Pods-TextDetectionUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		8B28D432FDDE61A928D96545 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TextDetectionUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C68CC352ABBB736EAB9A066B /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextDetection/Pods-TextDetection-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FAC34699B6807628043A1F5C /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TextDetection/Pods-TextDetection-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/TesseractOCRiOS/TesseractOCR.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/TesseractOCR.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TextDetection/Pods-TextDetection-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D0AAD1541F7DAD4C005A0B78 /* Sources */ = {
@@ -351,10 +475,15 @@
 		};
 		D0AAD1761F7DAD4C005A0B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1F8C1F77DA539CEF9DC600D6 /* Pods-TextDetection.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ERD8AULL8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TesseractOCRiOS\"",
+				);
 				INFOPLIST_FILE = TextDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Peter.TextDetection;
@@ -366,10 +495,15 @@
 		};
 		D0AAD1771F7DAD4C005A0B78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D685D2EDF7CCE9BA541C6EAE /* Pods-TextDetection.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ERD8AULL8;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$PODS_CONFIGURATION_BUILD_DIR/TesseractOCRiOS\"",
+				);
 				INFOPLIST_FILE = TextDetection/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = Peter.TextDetection;
@@ -381,6 +515,7 @@
 		};
 		D0AAD1791F7DAD4C005A0B78 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 608B5F8C7EB4AD39686D5E22 /* Pods-TextDetectionUITests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;
@@ -397,6 +532,7 @@
 		};
 		D0AAD17A1F7DAD4C005A0B78 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4DB67F539593E830A6B1E8AA /* Pods-TextDetectionUITests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				CODE_SIGN_STYLE = Automatic;

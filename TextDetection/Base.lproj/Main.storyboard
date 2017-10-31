@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="9jC-VC-uBH">
-    <device id="retina4_7" orientation="portrait">
+    <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
@@ -11,20 +11,20 @@
         <!--Text Detection-->
         <scene sceneID="xZ7-1P-gne">
             <objects>
-                <viewController id="sUm-rZ-Uzf" customClass="ViewController" customModule="Text_Detection_Starter_Project" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sUm-rZ-Uzf" customClass="ViewController" customModule="TextDetection" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="g5A-07-oaV"/>
                         <viewControllerLayoutGuide type="bottom" id="hkc-3r-lWU"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="uNu-gH-O9F">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G3u-JN-vRh">
-                                <rect key="frame" x="0.0" y="64" width="375" height="527"/>
+                                <rect key="frame" x="0.0" y="64" width="414" height="596"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ji5-LB-R3A">
-                                <rect key="frame" x="0.0" y="599" width="375" height="68"/>
+                                <rect key="frame" x="0.0" y="668" width="414" height="68"/>
                                 <attributedString key="attributedText">
                                     <fragment content="Words ">
                                         <attributes>
@@ -71,7 +71,7 @@
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9jC-VC-uBH" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="v09-hc-Jv2">
-                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
