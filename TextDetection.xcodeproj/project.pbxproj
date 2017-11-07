@@ -7,12 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		375A57A7BC2F769C4C510379 /* Pods_TextDetection.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 744E1998021929BA0D23A830 /* Pods_TextDetection.framework */; };
 		D0AAD15C1F7DAD4C005A0B78 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAD15B1F7DAD4C005A0B78 /* AppDelegate.swift */; };
 		D0AAD15E1F7DAD4C005A0B78 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAD15D1F7DAD4C005A0B78 /* ViewController.swift */; };
 		D0AAD1611F7DAD4C005A0B78 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AAD15F1F7DAD4C005A0B78 /* Main.storyboard */; };
 		D0AAD1631F7DAD4C005A0B78 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D0AAD1621F7DAD4C005A0B78 /* Assets.xcassets */; };
 		D0AAD1661F7DAD4C005A0B78 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D0AAD1641F7DAD4C005A0B78 /* LaunchScreen.storyboard */; };
 		D0AAD1711F7DAD4C005A0B78 /* TextDetectionUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D0AAD1701F7DAD4C005A0B78 /* TextDetectionUITests.swift */; };
+		F96862B962302CBD9B060C90 /* Pods_TextDetectionUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A4A2268F5234D539C164C08A /* Pods_TextDetectionUITests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,6 +31,8 @@
 		1F8C1F77DA539CEF9DC600D6 /* Pods-TextDetection.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetection.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetection/Pods-TextDetection.debug.xcconfig"; sourceTree = "<group>"; };
 		4DB67F539593E830A6B1E8AA /* Pods-TextDetectionUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetectionUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetectionUITests/Pods-TextDetectionUITests.release.xcconfig"; sourceTree = "<group>"; };
 		608B5F8C7EB4AD39686D5E22 /* Pods-TextDetectionUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TextDetectionUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TextDetectionUITests/Pods-TextDetectionUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		744E1998021929BA0D23A830 /* Pods_TextDetection.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextDetection.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A4A2268F5234D539C164C08A /* Pods_TextDetectionUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TextDetectionUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AAD1581F7DAD4C005A0B78 /* TextDetection.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TextDetection.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D0AAD15B1F7DAD4C005A0B78 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D0AAD15D1F7DAD4C005A0B78 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				375A57A7BC2F769C4C510379 /* Pods_TextDetection.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F96862B962302CBD9B060C90 /* Pods_TextDetectionUITests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +84,7 @@
 				D0AAD16F1F7DAD4C005A0B78 /* TextDetectionUITests */,
 				D0AAD1591F7DAD4C005A0B78 /* Products */,
 				4F1CE38DE4FB14C425B2F380 /* Pods */,
+				D2410A6CF93570074A418CC7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -110,6 +117,15 @@
 				D0AAD1721F7DAD4C005A0B78 /* Info.plist */,
 			);
 			path = TextDetectionUITests;
+			sourceTree = "<group>";
+		};
+		D2410A6CF93570074A418CC7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				744E1998021929BA0D23A830 /* Pods_TextDetection.framework */,
+				A4A2268F5234D539C164C08A /* Pods_TextDetectionUITests.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -480,6 +496,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6ERD8AULL8;
+				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\"$PODS_CONFIGURATION_BUILD_DIR/TesseractOCRiOS\"",

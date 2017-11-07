@@ -9,6 +9,7 @@
 import UIKit
 import AVFoundation
 import Vision
+import TesseractOCR
 
 class ViewController: UIViewController {
     
@@ -80,11 +81,11 @@ class ViewController: UIViewController {
                 
                 self.highlightWord(box: rg)
                 
-                if let boxes = region?.characterBoxes {
-                    for characterBox in boxes {
-                        self.highlightLetters(box: characterBox)
-                    }
-                }
+//                if let boxes = region?.characterBoxes {
+//                    for characterBox in boxes {
+//                        self.highlightLetters(box: characterBox)
+//                    }
+//                }
             }
         }
     }
